@@ -15,7 +15,7 @@ DEVICE=Lavender
 
 # Kernel Name and Version
 ZIPNAME=NexusLite
-VERSION=X1
+VERSION=X1-CLO-4.19
 
 # Kernel Defconfig
 DEFCONFIG=lavender_defconfig
