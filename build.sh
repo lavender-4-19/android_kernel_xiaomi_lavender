@@ -14,8 +14,8 @@ MODEL=Xiaomi
 DEVICE=Lavender
 
 # Kernel Name and Version
-ZIPNAME=NexusLite
-VERSION=X1-CLO-4.19
+ZIPNAME=S0NiX
+VERSION=v1.0-CLO
 
 # Kernel Defconfig
 DEFCONFIG=lavender_defconfig
@@ -36,7 +36,7 @@ DATE=$(TZ=Asia/Kolkata date +"%Y%m%d-%T")
 TANGGAL=$(date +"%F%S")
 
 # Final Zip Name
-FINAL_ZIP=${ZIPNAME}-${VERSION}-${DEVICE}-${TANGGAL}.zip
+FINAL_ZIP=${ZIPNAME}-${VERSION}-${DEVICE}.zip
 
 ##----------------------------------------------------------##
 # Specify compiler - nexus, proton, azure, evagcc, aosp
@@ -104,7 +104,7 @@ function exports() {
         export SUBARCH=arm64
 
         # Export Local Version
-        export LOCALVERSION="-"
+        #export LOCALVERSION="-"
 
         # KBUILD HOST and USER
         export KBUILD_BUILD_HOST=NubXD
